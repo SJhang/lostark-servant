@@ -68,7 +68,6 @@ module.exports = merge(common, {
         use: [
           {
             options: {
-              formatter: require.resolve('react-dev-utils/eslintFormatter'),
               eslintPath: require.resolve('eslint'),
 
             },
@@ -90,28 +89,7 @@ module.exports = merge(common, {
           {
             test: /\.(js|mjs|jsx|ts|tsx)$/,
             include: paths.appSrc,
-            loader: require.resolve('babel-loader'),
-            options: {
-              customize: require.resolve(
-                'babel-preset-react-app/webpack-overrides'
-              ),
-
-              plugins: [
-                [
-                  require.resolve('babel-plugin-named-asset-import'),
-                  {
-                    loaderMap: {
-                      svg: {
-                        ReactComponent: '@svgr/webpack?-prettier,-svgo![path]',
-                      },
-                    },
-                  },
-                ],
-              ],
-              cacheDirectory: true,
-              cacheCompression: true,
-              compact: true,
-            },
+            loader: require.resolve('babel-loader')
           },
           {
             test: /\.(js|mjs)$/,

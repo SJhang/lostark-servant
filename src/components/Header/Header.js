@@ -1,10 +1,14 @@
 import React from 'react';
 
-function Header() {
+type Props = { onClickHome: Function };
+function Header(props: Props) {
+  const onClickNotification = () => {
+    props.onClickHome();
+  };
 
   return (
     <div className="ui attached top menu">
-      <div className="active item">
+      <div className="active item" onClick={() => onClickNotification()} role="button" tabIndex={0}>
         Home
       </div>
       <div className="item">

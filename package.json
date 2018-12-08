@@ -8,6 +8,13 @@
     "dev:clean": "rimraf .application.log",
     "dev:server": "node script/devserver",
     "dev:lint": "esw -w --quiet",
+    "prodtest": "cross-env NODE_ENV=production node build/index.js",
+    "prod": "cross-env NODE_ENV=production npm-run-all --parallel prod:*",
+    "prod:clean": "rimraf ./build",
+    "prod:client": "webpack -p --progress --config=config/webpack.config.prod.js",
+    "prod:server": "copyfiles -a -u 1 script/**/**/* build",
+    "prebuild": "rimraf ../static/build",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.prod.js --progress",
     "electron": "electron .",
     "flow": "flow",
     "eslint": "eslint ."
@@ -84,6 +91,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
+    "webpack-cli": "^3.1.2",
     "webpack-merge": "^4.1.4",
     "winston": "^3.1.0"
   }

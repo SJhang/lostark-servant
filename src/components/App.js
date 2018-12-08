@@ -7,7 +7,7 @@ import SideNavbar from "./SideNavbar/SideNavbar";
 import DashBoard from "./Dashboard/Dashboard";
 
 function App() {
-  const showDashBoard = true;
+  const showDashBoard = false;
 
   const onClickHome = (toggleDashBoard: Boolean) => !toggleDashBoard;
 
