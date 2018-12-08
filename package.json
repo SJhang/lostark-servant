@@ -10,7 +10,7 @@
     "dev:lint": "esw -w --quiet",
     "electron": "electron .",
     "flow": "flow",
-    "eslint": "eslint"
+    "eslint": "eslint ."
   },
   "repository": {
     "type": "git",

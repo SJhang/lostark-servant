@@ -1,0 +1,16 @@
+# third party
+**/node_modules
+
+# builds
+build
+
+# configs
+config
+flow-typed
+
+# dev server
+script/
+
+# test configs
+__tests__/setup/**
+coverage/

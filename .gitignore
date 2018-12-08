@@ -1,6 +1,8 @@
 #dependencies
 node_modules/
 
+# logs
+.application.log
 
 # settings
 .setting/
@@ -10,3 +12,6 @@ bin/
 .env
 package-lock.json
 .DS_Store
+
+# build
+build/
