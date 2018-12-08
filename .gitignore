@@ -1,0 +1,12 @@
+#dependencies
+node_modules/
+
+
+# settings
+.setting/
+bin/
+.idea/
+.vscode/
+.env
+package-lock.json
+.DS_Store

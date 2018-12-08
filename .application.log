@@ -1,0 +1,159 @@
+2018-12-08T04:08:31.440Z info: Application logs file: /Users/sxj1wjn/Documents/personal/lostark-servant-scratch/.application.log
+2018-12-08T04:08:31.442Z info: Application env: development
+2018-12-08T04:08:32.279Z info: HTTP server is now running on http://localhost:3000
+2018-12-08T04:08:35.641Z info: Hash: 433607d91dd84f639864
+Version: webpack 4.27.1
+Time: 3330ms
+Built at: 2018-12-07 22:08:35
+                         Asset       Size  Chunks             Chunk Names
+                    index.html  595 bytes          [emitted]  
+    static/js/main.433607d9.js   1.18 MiB    main  [emitted]  main
+static/js/main.433607d9.js.map   1.29 MiB    main  [emitted]  main
+Entrypoint main = static/js/main.433607d9.js static/js/main.433607d9.js.map
+[0] multi ./src/index.js webpack-hot-middleware/client?http://localhost:3000&reload=true 40 bytes {main} [built]
+[./node_modules/ansi-html/index.js] 4.16 KiB {main} [built]
+[./node_modules/ansi-regex/index.js] 135 bytes {main} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js!./public/scss/index.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./node_modules/sass-loader/lib/loader.js!./public/scss/index.scss 142 bytes {main} [built]
+[./node_modules/querystring-es3/index.js] 127 bytes {main} [built]
+[./node_modules/react-dom/index.js] 1.33 KiB {main} [built]
+[./node_modules/react/index.js] 190 bytes {main} [built]
+[./node_modules/strip-ansi/index.js] 161 bytes {main} [built]
+[./node_modules/webpack-hot-middleware/client-overlay.js] (webpack)-hot-middleware/client-overlay.js 2.16 KiB {main} [built]
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true] (webpack)-hot-middleware/client.js?http://localhost:3000&reload=true 7.59 KiB {main} [built]
+[./node_modules/webpack-hot-middleware/process-update.js] (webpack)-hot-middleware/process-update.js 4.26 KiB {main} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {main} [built]
+[./public/scss/index.scss] 1.42 KiB {main} [built]
+[./src/components/App.js] 1.8 KiB {main} [built]
+[./src/index.js] 386 bytes {main} [built]
+    + 75 hidden modules
+Child html-webpack-plugin for "index.html":
+         Asset     Size  Chunks  Chunk Names
+    index.html  557 KiB       0  
+    Entrypoint undefined = index.html
+    [./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html] 731 bytes {0} [built]
+    [./node_modules/lodash/lodash.js] 527 KiB {0} [built]
+    [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {0} [built]
+2018-12-08T04:08:35.641Z info: Compiled successfully.
+2018-12-08T04:09:26.867Z info: ::ffff:127.0.0.1 - GET /
+2018-12-08T04:09:26.873Z info: ::ffff:127.0.0.1 - GET / - 200 - 0.006s
+2018-12-08T04:09:26.925Z info: ::ffff:127.0.0.1 - GET /static/js/main.433607d9.js
+2018-12-08T04:09:26.929Z info: ::ffff:127.0.0.1 - GET /static/js/main.433607d9.js - 200 - 0.003s
+2018-12-08T04:09:29.593Z info: ::ffff:127.0.0.1 - GET /static/js/main.433607d9.js.map
+2018-12-08T04:09:29.596Z info: ::ffff:127.0.0.1 - GET /static/js/main.433607d9.js.map - 200 - 0.002s
+2018-12-08T04:09:39.457Z info: Compiling...
+2018-12-08T04:09:39.948Z info: Hash: 9dfff251d55fa21ac89f
+Version: webpack 4.27.1
+Time: 279ms
+Built at: 2018-12-07 22:09:39
+                                      Asset       Size  Chunks             Chunk Names
+       433607d91dd84f639864.hot-update.json   46 bytes          [emitted]  
+       985d283e10ca690ba146.hot-update.json   44 bytes          [emitted]  
+                                 index.html  595 bytes          [emitted]  
+    main.433607d91dd84f639864.hot-update.js   3.74 KiB    main  [emitted]  main
+main.433607d91dd84f639864.hot-update.js.map    1.1 KiB    main  [emitted]  main
+                 static/js/main.9dfff251.js   1.18 MiB    main  [emitted]  main
+             static/js/main.9dfff251.js.map   1.29 MiB    main  [emitted]  main
+Entrypoint main = static/js/main.9dfff251.js main.433607d91dd84f639864.hot-update.js static/js/main.9dfff251.js.map main.433607d91dd84f639864.hot-update.js.map
+[0] multi ./src/index.js webpack-hot-middleware/client?http://localhost:3000&reload=true 40 bytes {main}
+[./node_modules/ansi-html/index.js] 4.16 KiB {main}
+[./node_modules/ansi-regex/index.js] 135 bytes {main}
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js!./public/scss/index.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./node_modules/sass-loader/lib/loader.js!./public/scss/index.scss 142 bytes {main}
+[./node_modules/querystring-es3/index.js] 127 bytes {main}
+[./node_modules/react-dom/index.js] 1.33 KiB {main}
+[./node_modules/react/index.js] 190 bytes {main}
+[./node_modules/strip-ansi/index.js] 161 bytes {main}
+[./node_modules/webpack-hot-middleware/client-overlay.js] (webpack)-hot-middleware/client-overlay.js 2.16 KiB {main}
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true] (webpack)-hot-middleware/client.js?http://localhost:3000&reload=true 7.59 KiB {main}
+[./node_modules/webpack-hot-middleware/process-update.js] (webpack)-hot-middleware/process-update.js 4.26 KiB {main}
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {main}
+[./public/scss/index.scss] 1.42 KiB {main}
+[./src/components/App.js] 1.8 KiB {main} [built]
+[./src/index.js] 386 bytes {main}
+    + 75 hidden modules
+Child html-webpack-plugin for "index.html":
+                                   Asset      Size  Chunks             Chunk Names
+    985d283e10ca690ba146.hot-update.json  44 bytes          [emitted]  
+                              index.html   557 KiB       1             
+    Entrypoint undefined = index.html
+    [./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html] 731 bytes {1}
+    [./node_modules/lodash/lodash.js] 527 KiB {1}
+    [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {1}
+    [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {1}
+2018-12-08T04:09:39.949Z info: Compiled successfully.
+2018-12-08T04:09:39.955Z info: ::ffff:127.0.0.1 - GET /433607d91dd84f639864.hot-update.json
+2018-12-08T04:09:39.956Z info: ::ffff:127.0.0.1 - GET /433607d91dd84f639864.hot-update.json - 200 - 0.001s
+2018-12-08T04:09:39.963Z info: ::ffff:127.0.0.1 - GET /main.433607d91dd84f639864.hot-update.js
+2018-12-08T04:09:39.964Z info: ::ffff:127.0.0.1 - GET /main.433607d91dd84f639864.hot-update.js - 200 - 0.001s
+2018-12-08T04:09:39.971Z info: ::ffff:127.0.0.1 - GET /main.433607d91dd84f639864.hot-update.js.map
+2018-12-08T04:09:39.972Z info: ::ffff:127.0.0.1 - GET /main.433607d91dd84f639864.hot-update.js.map - 200 - 0.001s
+2018-12-08T04:09:39.984Z info: ::ffff:127.0.0.1 - GET /
+2018-12-08T04:09:39.986Z info: ::ffff:127.0.0.1 - GET / - 200 - 0.002s
+2018-12-08T04:09:40.066Z info: ::ffff:127.0.0.1 - GET /static/js/main.9dfff251.js
+2018-12-08T04:09:40.070Z info: ::ffff:127.0.0.1 - GET /static/js/main.9dfff251.js - 200 - 0.003s
+2018-12-08T04:09:40.502Z info: ::ffff:127.0.0.1 - GET /static/js/main.9dfff251.js.map
+2018-12-08T04:09:40.504Z info: ::ffff:127.0.0.1 - GET /static/js/main.9dfff251.js.map - 200 - 0.002s
+2018-12-08T04:09:48.491Z info: Compiling...
+2018-12-08T04:09:48.948Z info: Hash: a63c0c70e52d25e90a06
+Version: webpack 4.27.1
+Time: 245ms
+Built at: 2018-12-07 22:09:48
+                                      Asset       Size  Chunks             Chunk Names
+       9dfff251d55fa21ac89f.hot-update.json   46 bytes          [emitted]  
+       b32b16a2b0e3947d2a4e.hot-update.json   44 bytes          [emitted]  
+                                 index.html  595 bytes          [emitted]  
+    main.9dfff251d55fa21ac89f.hot-update.js   3.74 KiB    main  [emitted]  main
+main.9dfff251d55fa21ac89f.hot-update.js.map    1.1 KiB    main  [emitted]  main
+                 static/js/main.a63c0c70.js   1.18 MiB    main  [emitted]  main
+             static/js/main.a63c0c70.js.map   1.29 MiB    main  [emitted]  main
+Entrypoint main = static/js/main.a63c0c70.js main.9dfff251d55fa21ac89f.hot-update.js static/js/main.a63c0c70.js.map main.9dfff251d55fa21ac89f.hot-update.js.map
+[0] multi ./src/index.js webpack-hot-middleware/client?http://localhost:3000&reload=true 40 bytes {main}
+[./node_modules/ansi-html/index.js] 4.16 KiB {main}
+[./node_modules/ansi-regex/index.js] 135 bytes {main}
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js!./public/scss/index.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./node_modules/sass-loader/lib/loader.js!./public/scss/index.scss 142 bytes {main}
+[./node_modules/querystring-es3/index.js] 127 bytes {main}
+[./node_modules/react-dom/index.js] 1.33 KiB {main}
+[./node_modules/react/index.js] 190 bytes {main}
+[./node_modules/strip-ansi/index.js] 161 bytes {main}
+[./node_modules/webpack-hot-middleware/client-overlay.js] (webpack)-hot-middleware/client-overlay.js 2.16 KiB {main}
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true] (webpack)-hot-middleware/client.js?http://localhost:3000&reload=true 7.59 KiB {main}
+[./node_modules/webpack-hot-middleware/process-update.js] (webpack)-hot-middleware/process-update.js 4.26 KiB {main}
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {main}
+[./public/scss/index.scss] 1.42 KiB {main}
+[./src/components/App.js] 1.8 KiB {main} [built]
+[./src/index.js] 386 bytes {main}
+    + 75 hidden modules
+Child html-webpack-plugin for "index.html":
+                                   Asset      Size  Chunks             Chunk Names
+    b32b16a2b0e3947d2a4e.hot-update.json  44 bytes          [emitted]  
+                              index.html   557 KiB       0             
+    Entrypoint undefined = index.html
+    [./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html] 731 bytes {0}
+    [./node_modules/lodash/lodash.js] 527 KiB {0}
+    [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {0}
+    [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {0}
+2018-12-08T04:09:48.948Z info: Compiled successfully.
+2018-12-08T04:09:48.958Z info: ::ffff:127.0.0.1 - GET /9dfff251d55fa21ac89f.hot-update.json
+2018-12-08T04:09:48.959Z info: ::ffff:127.0.0.1 - GET /9dfff251d55fa21ac89f.hot-update.json - 200 - 0.001s
+2018-12-08T04:09:48.964Z info: ::ffff:127.0.0.1 - GET /main.9dfff251d55fa21ac89f.hot-update.js
+2018-12-08T04:09:48.965Z info: ::ffff:127.0.0.1 - GET /main.9dfff251d55fa21ac89f.hot-update.js - 200 - 0.001s
+2018-12-08T04:09:48.971Z info: ::ffff:127.0.0.1 - GET /main.9dfff251d55fa21ac89f.hot-update.js.map
+2018-12-08T04:09:48.971Z info: ::ffff:127.0.0.1 - GET /main.9dfff251d55fa21ac89f.hot-update.js.map - 200 - 0s
+2018-12-08T04:09:48.976Z info: ::ffff:127.0.0.1 - GET /
+2018-12-08T04:09:48.977Z info: ::ffff:127.0.0.1 - GET / - 200 - 0.001s
+2018-12-08T04:09:48.994Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js
+2018-12-08T04:09:48.997Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js - 200 - 0.003s
+2018-12-08T04:09:49.416Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js.map
+2018-12-08T04:09:49.418Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js.map - 200 - 0.002s
+2018-12-08T04:12:50.568Z info: ::ffff:127.0.0.1 - GET /
+2018-12-08T04:12:50.569Z info: ::ffff:127.0.0.1 - GET / - 200 - 0.002s
+2018-12-08T04:12:50.689Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js
+2018-12-08T04:12:50.693Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js - 200 - 0.003s
+2018-12-08T04:12:51.975Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js.map
+2018-12-08T04:12:51.978Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js.map - 200 - 0.003s
+2018-12-08T04:14:49.392Z info: ::ffff:127.0.0.1 - GET /
+2018-12-08T04:14:49.393Z info: ::ffff:127.0.0.1 - GET / - 200 - 0.001s
+2018-12-08T04:14:49.605Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js
+2018-12-08T04:14:49.607Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js - 200 - 0.002s
+2018-12-08T04:14:51.155Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js.map
+2018-12-08T04:14:51.160Z info: ::ffff:127.0.0.1 - GET /static/js/main.a63c0c70.js.map - 200 - 0.005s
