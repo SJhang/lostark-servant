@@ -10,7 +10,6 @@
     "sourceType": "module"
   },
   "globals": {
-    "digitalData": true,
     "jQuery": true
   },
   "extends": [

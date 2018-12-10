@@ -48,7 +48,7 @@ function SideNavbar(props: Props) {
             <Menu.Item as={Link} to="/character">My Character</Menu.Item>
           </Menu.Menu>
         </Menu.Item>
-        <Menu.Item bottom>
+        <Menu.Item bottom="true">
           <Menu.Item>Developed by bbongg</Menu.Item>
         </Menu.Item>
       </Sidebar>

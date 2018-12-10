@@ -1,36 +1,40 @@
 import React from 'react';
+import { Progress, Card, Image, Dimmer } from 'semantic-ui-react';
 
 type Props = {
   eventTitle: String,
-  location: String,
-  spawnTime: String,
+  spawnTime: Array,
   spawnDate: String,
-  eventReward: String,
-  eventImg: String
+  rewards: Array,
+  eventImg: String,
+  itemLevel: String,
+  location: Array
 }
 function EventCard(props: Props) {
-  const { eventTitle, location, spawnTime, spawnDate, eventReward, eventImg } = props;
+  const { eventTitle, spawnTime, spawnDate, rewards, eventImg, itemLevel, location } = props;
 
   return (
-    <div className="ui card">
-      <div className="content">
-        <div className="right floated meta">{spawnTime}</div>
-        <img className="ui avatar image" src={eventImg} alt="event-img"/> {eventTitle}
-        <div className="meta">{location}</div>
-      </div>
-      <div className="content">
-        <div className="right floated">
-          {spawnDate}
-        </div>
-        {eventReward}
-      </div>
-      <div className="extra content">
-        <div className="ui two buttons">
-          <div className="ui basic green button">Approve</div>
-          <div className="ui basic red button">Decline</div>
-        </div>
-      </div>
-    </div>
+    <React.Fragment>
+      <Card raised>
+        <Card.Content>
+          <Card.Header>{eventTitle}</Card.Header>
+          <Card.Meta>{spawnDate}</Card.Meta>
+          <Card.Description>
+            {spawnTime}
+          </Card.Description>
+          <Card.Description>
+            {`${rewards} ${location} ${itemLevel}`}
+          </Card.Description>
+        </Card.Content>
+        <Card.Content extra>
+          <Dimmer.Dimmable>
+            <Image floated="right" size="mini" src={eventImg}/>
+            {/* <Dimmer active={} onClickOutside={}/> */}
+          </Dimmer.Dimmable>
+        </Card.Content>
+      </Card>
+      <Progress attached="bottom"/>
+    </React.Fragment>
   )
 }
 

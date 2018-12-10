@@ -38,7 +38,6 @@ app.use(helmet.frameguard({ action: 'sameorigin' }));
 app.use(helmet.noCache());
 
 // application routes
-
 const setupAppRoutes =
   process.env.NODE_ENV === 'development'
     ? require('./middleware/development')

@@ -20,6 +20,7 @@ module.exports = {
   output: {
     path: paths.appBuild,
     filename: 'static/js/[name].[hash:8].js',
+    chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
     publicPath: publicPath,
     devtoolModuleFilenameTemplate: info =>
       path
@@ -27,9 +28,6 @@ module.exports = {
         .replace(/\\/g, '/'),
   },
   resolve: {
-    modules: ['node_modules'].concat(
-      process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
-    ),
     extensions: paths.moduleFileExtensions.map(ext => `.${ext}`),
     alias: {
       // Support React Native Web

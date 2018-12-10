@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
+const path = require('path');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -123,6 +124,11 @@ module.exports = merge(common, {
         ],
       },
     ],
+  },
+  resolve: {
+    modules: ['node_modules'].concat(
+      process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
+    )
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -19,4 +19,8 @@ module.exports = function setup(app) {
     })
   );
   app.use(webpackHotMiddleware(compiler));
+
+  app.get('/events', (req, res) => {
+    res.send({ express: "Here are events!"})
+  });
 };

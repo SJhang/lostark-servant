@@ -1,8 +1,10 @@
-const webpack = require('webpack');
 const merge = require('webpack-merge');
 const paths = require('./paths');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const safePostCssParser = require('postcss-safe-parser');
 
 const common = require('./webpack.config.common.js');
 
@@ -58,6 +60,48 @@ module.exports = merge(common, {
   bail: true,
   devtool: 'source-map',
   mode: 'production',
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          parse: {
+            ecma: 8,
+          },
+          compress: {
+            ecma: 5,
+            warnings: false,
+            comparisons: false,
+            inline: 2,
+          },
+          mangle: {
+            safari10: true,
+          },
+          output: {
+            ecma: 5,
+            comments: false,
+            ascii_only: true,
+          },
+        },
+        parallel: true,
+        cache: true,
+        sourceMap: true,
+      }),
+      new OptimizeCSSAssetsPlugin({
+        cssProcessorOptions: {
+          parser: safePostCssParser,
+          map: {
+              inline: false,
+              annotation: true,
+            }
+        },
+      }),
+    ],
+    splitChunks: {
+      chunks: 'all',
+      name: false,
+    },
+    runtimeChunk: true,
+  },
   module: {
     strictExportPresence: true,
     rules: [
@@ -178,5 +222,13 @@ module.exports = merge(common, {
         minifyURLs: true,
       },
     }),
-  ]
+  ],
+  node: {
+    dgram: 'empty',
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+    child_process: 'empty',
+  },
+  performance: false
 });
