@@ -6,25 +6,40 @@ import Header from "./Header/Header";
 import SideNavbar from "./SideNavbar/SideNavbar";
 import DashBoard from "./Dashboard/Dashboard";
 
-function App() {
-  const showDashBoard = false;
+class App extends React.Component {
+  constructor() {
+    super();
 
-  const onClickHome = (toggleDashBoard: Boolean) => !toggleDashBoard;
+    this.state = { showSideNavbar: false };
+  }
 
-  return (
-    <Router>
-      {
-        showDashBoard ? (
-          <DashBoard/>
-        ) : (
-          <div className="">
-            <Header onClickHome={onClickHome}/>
-            <SideNavbar/>
-          </div>
-        )
-      }
-    </Router>
-  )
+  onClickToggleSideNav = () => {
+    const { showSideNavbar } = this.state;
+    this.setState({ showSideNavbar: !showSideNavbar });
+  };
+
+  render() {
+    const { showSideNavbar } = this.state;
+    return (
+      <Router>
+        <React.Fragment>
+          <Header
+            visible={showSideNavbar}
+            onClickToggleSideNav={this.onClickToggleSideNav}
+          />
+
+          <SideNavbar
+            visible={showSideNavbar}
+            onClickToggleSideNav={this.onClickToggleSideNav}
+          >
+            <div id="main-container">
+              <DashBoard />
+            </div>
+          </SideNavbar>
+        </React.Fragment>
+      </Router>
+    )
+  }
 }
 
 export default App;

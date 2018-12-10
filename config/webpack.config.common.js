@@ -1,15 +1,12 @@
 'use strict';
 
 const path = require('path');
-const getClientEnvironment = require('./env');
 const paths = require('./paths');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 
 const publicPath = '/';
-const publicUrl = paths.servedPath.slice(0, -1) + '/assets';
-const env = getClientEnvironment(publicUrl);
 
 module.exports = {
   context: path.resolve(__dirname, '..'),

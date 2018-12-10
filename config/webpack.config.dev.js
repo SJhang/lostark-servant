@@ -1,13 +1,16 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const paths = require('./paths');
+const getClientEnvironment = require('./env');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
+const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 
 const common = require('./webpack.config.common.js');
 
 const publicPath = '/';
 const publicUrl = '';
+const env = getClientEnvironment(publicUrl);
 
 // style files regexes
 const cssRegex = /\.css$/;
@@ -130,6 +133,8 @@ module.exports = merge(common, {
     new HtmlWebpackHarddiskPlugin({
       outputPath: paths.appBuild,
     }),
+    new InterpolateHtmlPlugin(HtmlWebpackPlugin, env.raw),
+    new webpack.DefinePlugin(env.stringified),
     new webpack.HotModuleReplacementPlugin(), // never be used in PROD
     new webpack.NamedModulesPlugin()
   ]
