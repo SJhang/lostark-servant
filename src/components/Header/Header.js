@@ -16,12 +16,7 @@ function Header(props: Props) {
       <Menu.Item>
         <DigitalClock/>
       </Menu.Item>
-      <Menu.Item>
-        <div className="ui icon labeled button">
-          <i className="camera retro icon"/>
-          <span className="text">Screenshot</span>
-        </div>
-      </Menu.Item>
+
       <Menu.Menu position="right">
         <Menu.Item icon="bell"/>
           <Dropdown item icon="ellipsis vertical" floating>

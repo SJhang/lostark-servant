@@ -65,6 +65,9 @@ module.exports = {
   testsSrc: resolveModule(resolveApp, '__test__'),
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json')),
-  moduleFileExtensions: moduleFileExtensions
+  servedPath: getServedPath(resolveApp('package.json'))
 };
+
+
+
+module.exports.moduleFileExtensions = moduleFileExtensions;

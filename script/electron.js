@@ -1,5 +1,4 @@
 'use strict';
-
 // Do this as the first thing so that any code reading it knows the right env.
 process.env.BABEL_ENV = 'development';
 process.env.NODE_ENV = 'development';
@@ -12,6 +11,7 @@ require('../config/env');
 const {app, BrowserWindow} = require('electron');
 const path = require('path');
 const url = require('url');
+
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -31,9 +31,6 @@ function createWindow () {
   mainWindow.loadURL(startUrl);
   mainWindow.webContents.openDevTools();
 
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
-
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     // Dereference the window object, usually you would store windows
@@ -46,7 +43,9 @@ function createWindow () {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow);
+app.on('ready', () => {
+  createWindow();
+});
 
 
 // Quit when all windows are closed.

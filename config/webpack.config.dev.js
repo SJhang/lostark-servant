@@ -5,7 +5,7 @@ const paths = require('./paths');
 const getClientEnvironment = require('./env');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
-const InterpolateHtmlPlugin = require('interpolate-html-plugin');
+const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 
 const common = require('./webpack.config.common.js');
 
