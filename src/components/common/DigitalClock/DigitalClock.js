@@ -10,9 +10,7 @@ class DigitalClock extends React.Component {
       now: moment(),
       timeZone: 'Asia/Seoul'
     };
-  }
 
-  componentWillMount() {
     this.getCurrentTimeZoneAbbr();
   }
 
@@ -30,7 +28,8 @@ class DigitalClock extends React.Component {
   }
 
   tick = () => {
-    this.setState({ now: moment() });
+    const { now } = this.state;
+    this.setState({ now: now.add('1', 'seconds') });
   };
 
   parseTimeZone = (timeZone: String) => {

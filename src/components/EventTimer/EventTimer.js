@@ -25,7 +25,7 @@ class EventTimer extends React.Component {
 
   render() {
     return (
-      <Card.Group as={Segment} itemsPerRow={3}>
+      <Card.Group as={Segment} itemsPerRow={3} stackable>
         {this.renderEventCards()}
       </Card.Group>
     );

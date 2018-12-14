@@ -1,6 +1,7 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import servantApp from '../reducers';
 
 const configureStore = (): Object => {
   const middlewares = [thunk];
@@ -11,12 +12,12 @@ const configureStore = (): Object => {
     middleware = applyMiddleware(...middlewares);
   }
 
-  const store = createStore(orderApp, middleware);
+  const store = createStore(servantApp, middleware);
 
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
     module.hot.accept('../reducers', () => {
-      const nextRootReducer = orderApp;
+      const nextRootReducer = servantApp;
       store.replaceReducer(nextRootReducer);
     });
   }

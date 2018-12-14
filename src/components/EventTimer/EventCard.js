@@ -32,8 +32,8 @@ function EventCard(props: Props) {
             {/* <Dimmer active={} onClickOutside={}/> */}
           </Dimmer.Dimmable>
         </Card.Content>
+        <Progress attached="bottom" percent={99} color="green"/>
       </Card>
-      <Progress attached="bottom"/>
     </React.Fragment>
   )
 }
